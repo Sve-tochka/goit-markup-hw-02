@@ -1,0 +1,27 @@
+.page-header {
+  color: #212121;
+}
+
+.site-logo {
+  color: #212121;
+}
+
+.logo {
+  color: #2196f3;
+}
+
+.site-nav {
+  color: #212121;
+}
+
+.site-nav:hover {
+  color: #2196f3;
+}
+
+.auth-nav {
+  color: #212121;
+}
+
+.auth-nav:hover {
+  color: #2196f3;
+}
