@@ -5,15 +5,25 @@
 /* акцент #2196F3 */
 /* фон - цвет вторичный #F5F4FA*/
 
-.page {
-  background: #ffffff;
-  color: #212121;
-}
-.page-header {
-  color: #212121;
+/*уберет все точечки маркерованого списка
+ul {
+  list-style: none;
+} 
+или
+.list {
+  list-style: none;
+}*/
+.list {
+  list-style: none;
 }
 
-.site-logo {
+/* body */
+.page {
+  background: #ffffff;
+  color: #757575;
+}
+
+.page-header {
   color: #212121;
 }
 
@@ -21,33 +31,31 @@
   color: #2196f3;
 }
 
-.site-nav {
+.site-logo {
   color: #212121;
 }
 
-.site-nav-menu {
+/* body site-nav */
+.site-nav .link {
   color: #212121;
 }
 
-.site-nav-menu:hover,
-.site-nav-menu:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: #2196f3;
 }
 
-.auth-nav {
+/* body auth-nav */
+.auth-nav .link {
   color: #212121;
 }
 
-.auth-nav-menu {
-  color: #212121;
-}
-
-.auth-nav-menu:hover,
-.auth-nav-menu:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
   color: #2196f3;
 }
 
-/*уберет все точечки маркерованого списка*/
-ul {
-  list-style: none;
+.section
+.section-title {
+  color: #212121;
 }
