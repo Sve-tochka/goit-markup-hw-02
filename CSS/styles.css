@@ -1,3 +1,14 @@
+/*цвета логотипа #000000 */
+/*цвет основного текста #212121 */
+/*цвет вторичного текста #757575 */
+/* белый текст с прозрачностью rgba(255, 255, 255, 0.4); */
+/* акцент #2196F3 */
+/* фон - цвет вторичный #F5F4FA*/
+
+.page {
+  background: #ffffff;
+  color: #212121;
+}
 .page-header {
   color: #212121;
 }
@@ -14,7 +25,12 @@
   color: #212121;
 }
 
-.site-nav:hover {
+.site-nav-menu {
+  color: #212121;
+}
+
+.site-nav-menu:hover,
+.site-nav-menu:focus {
   color: #2196f3;
 }
 
@@ -22,6 +38,16 @@
   color: #212121;
 }
 
-.auth-nav:hover {
+.auth-nav-menu {
+  color: #212121;
+}
+
+.auth-nav-menu:hover,
+.auth-nav-menu:focus {
   color: #2196f3;
+}
+
+/*уберет все точечки маркерованого списка*/
+ul {
+  list-style: none;
 }
