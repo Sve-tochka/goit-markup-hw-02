@@ -20,7 +20,10 @@ color: #757575;
 }
 
 body {
+background-color:var(--primary-text-color);
+color: var(--title-text-color);
 font-family: Roboto, sans-serif;
+letter-spacing: 0.03em;
 }
  
 /* page header */
@@ -34,6 +37,8 @@ color: var(--accent-color);
 font-family: Raleway;
 font-style: normal;
 font-weight: bold;
+font-size: 26px;
+line-height: 31px;
 }
 
 .site-logo {
