@@ -15,31 +15,42 @@
 
 /* body */
 .page {
-  background: #ffffff;
-  color: #757575;
+background: #ffffff;
+color: #757575;
 }
 
+body {
+font-family: Roboto, sans-serif;
+}
+ 
 /* page header */
 .page-header {
-  color: #212121;
+color: var(--primary-text-color);
+font-family: Roboto;
 }
 
 .logo {
-  color: #2196f3;
+color: var(--accent-color);
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
 }
 
 .site-logo {
-  color: #212121;
+color: var(--primary-text-color);
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
 }
 
 /* body site-nav */
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -48,47 +59,53 @@
 
 /* body auth-nav */
 .auth-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Hero section */
 .hero-title{
-  color: var(--white-color)
+color: var(--white-color)
+font-family: Roboto;
 }
 
 /* for all of class"section" */
 .section
 .section-title {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 /* footer */
 .main-footer{
-  color: rgb(100, 199, 91); 
+  color: var(--white-color); 
 }
 
 .footer-item{
-  color:rgba(255, 255, 255, 0.6); ;
+color: rgba(255, 255, 255, 0.4);
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
 }
 
 .button {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+color: var(--white-color);
+background-color: var(--accent-color);
+font-family: Roboto;
 }
 
-/*уберет все точечки маркерованого списка
-ul {
-  list-style: none;
-} 
-или
-.list {
-  list-style: none;
-}*/
+.btn .filtr:hover,
+.btn .filtr:focus {
+color: var(--white-color);
+background-color: var(--accent-color);
+font-family: Roboto;
+}
+
+}
+
 .list {
   list-style: none;
 }
