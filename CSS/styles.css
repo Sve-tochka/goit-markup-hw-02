@@ -1,155 +1,77 @@
-/*цвета логотипа черный #000000
-цвет основного текста #212121
-цвет вторичного текста #757575
-белый с прозрачностью rgba(255, 255, 255, 0.4);
-акцент #2196F3
-основной фон #E5E5E5;
-фон вторичный серый #F5F4FA */
-
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196F3;
-  --white-color: #ffffff;
-  --black-color: #000000;
+  --white-color: #fff;
+  --black-color: #000;
   --main-background:#F5F4FA;
   --secondary-greybackground: #F5F4FA;
 }
 
-
-/* body */
-.page {
- background: #ffffff;
- color: #757575;
-}
-
-
-body {
- background-color:var(--primary-text-color);
- color: var(--title-text-color);
- font-family: Roboto, sans-serif;
- letter-spacing: 0.03em;
-}
- 
-
-/* page header */
-.page-header {
- color: var(--primary-text-color);
- font-family: Roboto;
-}
-
-
-.logo {
- color: var(--accent-color);
- font-family: Raleway;
- font-style: normal;
- font-weight: bold;
- font-size: 26px;
- line-height: 1.2;
-}
-
-
-.site-logo {
- color: var(--primary-text-color);
- font-family: Raleway;
- font-style: normal;
- font-weight: bold;
- font-size: 26px;
- line-height: 1.2;
-}
-
-
-/* body site-nav */
-.site-nav .link {
- color: var(--primary-text-color);
- 
- font-family: Roboto;
- font-style: normal;
- font-weight: 500;
- font-size: 14px;
- line-height: 1.14;
- letter-spacing: 0.02em;
-}
-
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-
-.site-nav .link.current {
-  color: var(--accent-color)
-}
-
-
-/* body auth-nav */
-.auth-nav .link {
-  color: var(--primary-text-color);
-}
-
-
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--accent-color);
-}
-
-
-/* Hero section */
-.hero-title {
- color: var(--black-color); /* финальный цвет var(--white-color);*/
-
- font-weight: 900;
- font-size: 44px;
- line-height: 1.36;
- text-align: center;
-}
-
-/* for all of class"section" */
-.section
-.section-title {
-  color: var(--primary-text-color);
-
-  
-}
-
-/* footer */
-.main-footer{
-  color: var(--white-color); 
-}
-
-.footer-item{
- color: rgba(255, 255, 255, 0.4);
- font-family: Roboto;
- font-style: normal;
- font-weight: normal;
-}
-
-.button {
- color: var(--white-color);
- background-color: var(--accent-color);
- font-family: Roboto;
-}
-
-
-
-.btn .filtr:hover,
-.btn .filtr:focus {
- color: var(--white-color);
- background-color: var(--accent-color);
- font-family: Roboto;
-}
-
-
-.list {
+.list { /*Убирает точечки в маркированных списках*/
   list-style: none;
 }
 
-
-a {
-  text-decoration: none;  /*Убирает подчеткивание в ссылок*/
+a { /*Убирает подчеткивание у ссылок*/
+  text-decoration: none;
 }
 
-address {
+.none { /* скрыть текст при отображении в браузере */
+  display: none;
+}
+
+/* body */
+.page { /* основной текст <p>*/
+  background-color:var(--primary-text-color);
+  background: var(--white-color);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+ }
+
+ .logo { /* Web */
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+ }
+
+ .site-logo { /* Studio*/
+  color: var(--primary-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+ }
+ 
+.section
+.section-title { /* Заголовки h2 */
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.developments-title { /*Чем мы занимаемся <p> */
+  color: var(--white-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  /* text-align: center;*/
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
