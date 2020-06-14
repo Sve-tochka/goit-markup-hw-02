@@ -4,8 +4,6 @@
   --accent-color: #2196F3;
   --white-color: #fff;
   --black-color: #000;
-  --main-background:#F5F4FA;
-  --secondary-greybackground: #F5F4FA;
   --page-background: #F5F4FA;
   --page-second-background: #E5E5E5;
   --footer-background: #2F303A;
@@ -263,6 +261,7 @@ input {
   letter-spacing: 0.03rem;
   font-style: normal;
 }
+
 
 .catalog {
   color: var(--primary-text-color);
