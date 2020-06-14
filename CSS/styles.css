@@ -135,8 +135,6 @@ a { /*Убирает подчеткивание у ссылок*/
   text-align: center;
 }
 
-.section
-
 .section-title { /* Заголовки h2 */
   color: var(--primary-text-color);
   font-family: Roboto;
