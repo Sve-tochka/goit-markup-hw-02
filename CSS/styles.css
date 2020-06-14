@@ -263,3 +263,39 @@ input {
   letter-spacing: 0.03rem;
   font-style: normal;
 }
+
+.catalog {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06rem;
+}
+
+.catalog-title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03rem; 
+  font-style: normal;
+}
+
+.catalog-text {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6; 
+  letter-spacing: 0.03rem; 
+  font-style: normal;
+}
+
+all
+web-site
+apps
+design
+marketing
