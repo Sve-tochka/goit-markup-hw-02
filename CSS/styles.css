@@ -6,11 +6,16 @@
   --black-color: #000;
   --main-background:#F5F4FA;
   --secondary-greybackground: #F5F4FA;
+  --page-background: #F5F4FA;
+  --page-second-background: #E5E5E5;
+  --footer-background: #2F303A;
+  --footer-adress: rgba(255, 255, 255, 0.6);
+  --footer-goit: rgba(255, 255, 255, 0.4);
 }
 
 .list { /*Убирает точечки в маркированных списках*/
   list-style: none;
-}
+  }
 
 a { /*Убирает подчеткивание у ссылок*/
   text-decoration: none;
@@ -22,45 +27,125 @@ a { /*Убирает подчеткивание у ссылок*/
 
 /* body */
 .page { /* основной текст <p>*/
-  background-color:var(--primary-text-color);
-  background: var(--white-color);
+  background-color:var(--primary-text-color); /*цвет фона элемента*/
+  background: var(--page-background);
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
- }
+  letter-spacing: 0.03rem;
+}
 
- .logo { /* Web */
+ /* page header */
+.page-header {
+  background: var(--white-color);
+  color: var(--primary-text-color);
+  
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02rem;
+}
+
+
+.logo { /* Web */
   color: var(--accent-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
- }
+}
 
- .site-logo { /* Studio*/
-  color: var(--primary-text-color);
+.site-logo { /* Studio*/
+  color: var(--black-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
- }
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02rem;
+}
  
+.site-nav .link:hover, /*подсвечивает текст при наведении */
+.site-nav .link:focus { /*подсвечивает текст при нажажатии клавиши Tab */
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color)
+}
+
+.auth-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+.feature-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+}
+
+.button {
+  color: var(--white-color); /*цвет текста*/
+  background-color: var(--accent-color); /*цвет фона элемента*/
+  font-family: Roboto; /*шрифт будет использоваться браузером*/
+  font-weight: bold; /*насыщенность шрифта*/
+  font-size: 16px; /*размер шрифта*/
+  line-height: 1.9;  /*межстрочный интервал*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /*тень к элементу*/
+  font-style: normal; /*начертание шрифта — обычное, курсивное или наклонное*/
+  border-radius: 4px; /*радиус скругления уголков рамки*/
+  text-align: center;
+}
+
 .section
+
 .section-title { /* Заголовки h2 */
   color: var(--primary-text-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16;
-  /* text-align: center; */
-  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03rem;
 }
 
 .developments-title { /*Чем мы занимаемся <p> */
@@ -70,8 +155,113 @@ a { /*Убирает подчеткивание у ссылок*/
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.1;
   /* text-align: center;*/
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   text-transform: uppercase;
+}
+
+.team {
+  background: var(--page-second-background);
+}
+
+.team-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team-list p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;  
+}
+
+.main-footer {
+  background: var(--footer-background);
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.03rem;
+}
+
+.footer-logo-text {
+  color: var(--white-color);
+}
+
+.footer-adress {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03rem;
+}
+
+.footer-adress a {
+  color: var(--footer-adress);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03rem;  
+}
+
+.footer-soc {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;  
+}
+
+input {
+  background-color: var(--footer-background);
+  color: var(--footer-adress);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  
+  border-radius: 4px;
+}
+
+.button-footer {
+  color: var(--white-color);
+  background-color: var(--accent-color); 
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.9;
+  border-radius: 4px;
+}
+
+.goit {
+  color: var(--footer-goit);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  /* or 200% */
+  
+  text-align: center;
+  letter-spacing: 0.03rem;
+  font-style: normal;
 }
