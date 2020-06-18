@@ -9,6 +9,7 @@
   --footer-background: #2F303A;
   --footer-adress: rgba(255, 255, 255, 0.6);
   --footer-goit: rgba(255, 255, 255, 0.4);
+  --portfolio-text-background: rgba(33, 150, 243, 0.9);
 }
 
 .list {
@@ -25,8 +26,7 @@ a {
 
 /* body */
 .page {
-  background-color:var(--primary-text-color);
-  background: var(--page-background);
+  /*background: var(--page-background);*/
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -38,7 +38,7 @@ a {
 
  /* page header */
 .page-header {
-  background: var(--white-color);
+  /*background: var(--white-color);*/
   color: var(--primary-text-color);
   
   font-weight: 500;
@@ -96,6 +96,10 @@ a {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+}
+
+.hero {
+  background: var(--page-background);
 }
 
 .hero-title {
@@ -158,7 +162,7 @@ a {
 }
 
 .team {
-  background: var(--page-second-background);
+  /*background: var(--page-second-background);*/
 }
 
 .team-title {
@@ -179,7 +183,7 @@ a {
 }
 
 .main-footer {
-  background: var(--footer-background);
+  /*background: var(--footer-background);*/
 }
 
 .footer-logo {
@@ -229,7 +233,7 @@ a {
 }
 
 input {
-  background-color: var(--footer-background);
+  /*background-color: var(--footer-background);*/
   color: var(--footer-adress);
   font-family: Roboto;
   font-weight: normal;
@@ -284,6 +288,7 @@ input {
 }
 
 .catalog-text {
+  background-color: var(--portfolio-text-background);
   color: var(--white-color);
   font-family: Roboto;
   font-weight: normal;
