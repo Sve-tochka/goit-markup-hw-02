@@ -183,7 +183,7 @@ a {
 }
 
 .main-footer {
-  /*background: var(--footer-background);*/
+  background: var(--footer-background);
 }
 
 .footer-logo {
